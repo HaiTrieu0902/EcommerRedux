@@ -36,11 +36,6 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="col-6 header-menu">
-                            <div class="menu-navbar-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
                             <div className="header-upper-links active d-flex align-items-center justify-content-between">
                                 <div className="header-upper-menu">
                                     <Link to="/compare-product" className="d-flex align-items-center gap-10 text-white">

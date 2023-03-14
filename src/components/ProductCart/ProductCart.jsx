@@ -18,6 +18,7 @@ const ProductCart = (props) => {
             {FeaturedCollection.map((item, index) => {
                 return (
                     <div
+                        key={index}
                         className={` ${location.pathname === '/store' ? `gr-${grid}` : 'col-3'} product-card-contain `}
                     >
                         <div className="product-card position-relative gap-10">
@@ -35,7 +36,7 @@ const ProductCart = (props) => {
                             <div className="product-details">
                                 <h6 className="brand">{item.brand}</h6>
                                 <h5 className="product-title">{item.title}</h5>
-                                <ReactStars count={5} size={24} value="4" activeColor="#ffd700" />
+                                <ReactStars count={5} size={24} value={4} activeColor="#ffd700" />
                                 <p className={`desc ${grid === 12 ? 'd-block' : 'd-none'}`}>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam unde quis, sunt
                                     explicabo rem nobis debitis iste? Suscipit, debitis exercitationem. Quam soluta
